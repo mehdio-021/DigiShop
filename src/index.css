@@ -1,0 +1,102 @@
+@import "./fonts/fonts.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Tanha";
+  direction: rtl;
+}
+#react-burger-menu-btn {
+  width: 35px !important;
+  height: 35px !important;
+  right: 16px !important;
+  top: 35px !important;
+}
+
+.bm-overaly {
+  top: 0;
+  left: 0;
+}
+
+.bm-burger-bars {
+  display: none;
+}
+
+/* .active{
+    color:#e11d48
+} */
+.active {
+  color: yellow;
+}
+
+.fadeShow {
+  animation: fadeShow 0.5s;
+  -webkit-animation: fadeShow 0.5s;
+}
+.sliderAnimation {
+  animation: sliderAnimation 4s ease-in-out infinite;
+  -webkit-animation: sliderAnimation 4s ease-in-out infinite;
+}
+
+@keyframes fadeShow {
+  from {
+    transform: translateY(-5rem);
+    -webkit-transform: translateY(-5rem);
+    -moz-transform: translateY(-5rem);
+    -ms-transform: translateY(-5rem);
+    -o-transform: translateY(-5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes sliderAnimation {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    rotate: 0deg;
+  }
+  90% {
+    rotate: 1deg;
+    transform: scale(1.06);
+    -webkit-transform: scale(1.06);
+    -moz-transform: scale(1.06);
+    -ms-transform: scale(1.06);
+    -o-transform: scale(1.06);
+  }
+  100% {
+    rotate: 0;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+  }
+}
+::-webkit-scrollbar{
+    width: 6px;
+}
+::-webkit-scrollbar-thumb{
+    background: #718096;
+  
+}
+::-webkit-scrollbar-track{
+    background: #cbd5e0;
+    
+}
+
+.backImg{
+    background-image: url(https://my.uupload.ir/dl/mbGR4KBn);
+}
